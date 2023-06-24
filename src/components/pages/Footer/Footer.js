@@ -52,7 +52,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-link-wrapper">
-          <
+          
           <div className="footer-link-items">
             <h2>Social Media</h2>
             <Link to="//instagram.com/johnalexx">Instagram</Link>
