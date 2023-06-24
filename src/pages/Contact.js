@@ -1,10 +1,15 @@
 import React from 'react'
+import HeroSection from '../components/HeroSection';
+import ContactSection from '../components/ContactSection';
+import { contactObjOne, contactObjTwo } from '../components/pages/Contact/ContactData';
+
 
 function Contact() {
     return (
-        <div>
-            <h2>Contact</h2>
-        </div>
+        <>
+           <HeroSection {...contactObjOne} />
+           <ContactSection {...contactObjTwo} />
+        </>
     )
 }
 

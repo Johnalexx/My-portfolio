@@ -1,0 +1,25 @@
+import Booking from "./components/pages/bookAppointment/Booking";
+
+import SignUp from "./components/pages/others/SignUp/SignUp";
+
+import Login from "./profile/Login";
+import Pricing from "./components/pages/bookAppointment/Pricing";
+import PaymentOptions from "./components/pages/payment/PaymentOptions";
+import PaymentSuccess from "./components/pages/payment/PaymentSuccess";
+import Appointments from "./components/pages/appointments/Apppointments";
+import Service from "./components/pages/others/AI/Quiz";
+import QnACard from "./components/pages/AI/QnACard";
+import Counselor from "./components/pages/others/Counselor/Counselor";
+import { ProtectedRoute } from "./ProtectedRoutes";
+
+<ProtectedRoute path="/book-appointment" component={Booking} />
+        <ProtectedRoute path="/payment-options" component={PaymentOptions} />
+        <ProtectedRoute path="/payment-success" component={PaymentSuccess} />
+        <ProtectedRoute path="/appointments" component={Appointments} />
+        <ProtectedRoute path="/questions" component={QnACard} />
+        <ProtectedRoute path="/pricing" component={Pricing} />
+
+        
+        <Route path="/sign-up" component={SignUp} />
+        <Route path="/login" component={Login} />
+        <Route path="/career-test" component={Counselor} />
